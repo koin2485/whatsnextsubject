@@ -16,9 +16,17 @@ subBut[0].addEventListener('click', () =>{
     subject.innerText="다음 시간은 " + nextTime
 });
 
+async function getImages(lang) {
+  const response = await fetch("https://peapix.com/bing/feed?country="+lang);
+  const imgs = await response.json();
+  return imgs;
+}
+
 reqBut[0].addEventListener('click', () =>{
     nextRequire = prompt("다음 시간의 안내사항을 입력해주세요"+"")
     wnsqlanf.innerText=nextRequire
 });
+
+document.body.style.backgroundImage=getImages('jp')[0]
 
 console.log(nextTime)
