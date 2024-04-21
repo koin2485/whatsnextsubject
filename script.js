@@ -27,6 +27,16 @@ reqBut[0].addEventListener('click', () =>{
     wnsqlanf.innerText=nextRequire
 });
 
+url="https://peapix.com/bing/feed?country=jp"
+
+fetch(url)
+  .then((response) => response.json())
+  .then((data) => {
+    console.log(data)
+    document.body.style.backgroundImage = "url('"+ data[0]['fullUrl'] + "')"
+    console.log(data[0]['title'])
+  });
+
 document.body.style.backgroundImage=getImages('jp')[0]
 
 console.log(nextTime)
