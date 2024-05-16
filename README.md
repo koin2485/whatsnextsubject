@@ -6,7 +6,9 @@ https://26-whats-next-subject.netlify.app/
 ## v 1.0.0
 - 다음시간과 준비물 표시하는 기능 
 - 다음시간과 준비물 변경하는 기능 
+## v 1.1
+- 배경화면 추가(https://peapix.com/api)
 # 다음 업데이트
 ## v 1.1.2
 - 시계 기능 추가
-- 배경화면 추가(https://peapix.com/api)
+
